@@ -1,0 +1,32 @@
+{
+  // ===
+  // Spacing
+  // ===
+
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+   // ===
+  // Event Triggers
+  // ===
+
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "extensions": [".html", ".js", ".vue", ".ts"]
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "vue-html", "html", "typescript"],
+  "vetur.format.enable": true,
+  "dotenv.enableAutocloaking": false,
+}
