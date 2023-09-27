@@ -1,7 +1,7 @@
 import axios, { AxiosError } from "axios";
 
 export default class BaseHttpService {
-  BASE_URL = process.env.VUE_APP_BACKEND_ADDR || "http://localhost:9000";
+  BASE_URL = import.meta.env.VITE_APP_BACKEND_ADDR || "http://localhost:9000";
   _accessToken: string | null = null;
 
   constructor() {

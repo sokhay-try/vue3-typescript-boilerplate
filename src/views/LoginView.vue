@@ -17,7 +17,6 @@
 
 <script lang="ts">
 import { RouteName } from "@/constants";
-import { defaultLocale } from "@/i18n";
 import { LOCALES } from "@/i18n/local-types";
 import { IAuth } from "@/store/modules/auth/types";
 import { defineComponent } from "vue";
@@ -37,7 +36,7 @@ export default defineComponent({
   data() {
     return {
       LOCALES,
-      defaultLang: defaultLocale,
+      defaultLang: LOCALES[1],
     };
   },
   watch: {
